@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>in-app second</title>
+</head>
+<body>
+    This is the second page
+    <a href="https://etoro.com/watchlist"> a tag link to etoro</a>
+    
+    <button class="js-link">
+        link with js window open
+    </button>
+
+    <script>
+        document
+        .querySelector('js-link')
+        .addEventListener("click", () => {
+            window.open("https://etoro.com/watchlist")
+        })
+    </script>
+</body>
+</html>
