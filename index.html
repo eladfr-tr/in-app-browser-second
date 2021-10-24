@@ -10,16 +10,22 @@
     This is the second page
     <a href="https://etoro.com/watchlists"> a tag link to etoro</a>
     
-    <button class="js-link">
+    <button class="js-link-open" onclick="linkWithWindowOpen()">
         link with js window open
+    </button>
+    <button class="js-link-location-href" onclick="linkWithWindowLocationHref()">
+        link with js window location href
     </button>
 
     <script>
-        document
-        .querySelector('js-link')
-        .addEventListener("click", () => {
+        function linkWithWindowOpen(){
             window.open("https://etoro.com/watchlists")
-        })
+        }
+
+        function linkWithWindowLocationHref() {
+            window.location.href = "https://etoro.com/watchlists"
+        }
+
     </script>
 </body>
 </html>
